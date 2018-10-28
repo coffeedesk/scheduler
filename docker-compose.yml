@@ -1,0 +1,7 @@
+version: "3.5"
+services:
+  php:
+    image: eu.gcr.io/coffeedesk-cloud/php7:latest
+    working_dir: /var/opt/app
+    volumes:
+      - .:/var/opt/app
