@@ -79,6 +79,7 @@ class Scheduler {
                     $this->_logger->error('Scheduler task failed', [
                         'exception' => $exception,
                     ]);
+                    continue;
                 }
                 $execution->setLastRuntime($currentTime);
                 $this->_storage->set($execution);
